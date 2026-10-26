@@ -255,6 +255,22 @@ article.active {
   border-radius: 3px;
 }
 
+:is(.service-title, .skills-title) {
+  position: relative;
+  padding-bottom: 10px;
+}
+
+:is(.service-title, .skills-title)::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 30px;
+  height: 3px;
+  background: var(--text-gradient-yellow);
+  border-radius: 3px;
+}
+
 .has-scrollbar::-webkit-scrollbar {
   width: 5px; /* for vertical scrollbar */
   height: 5px; /* for horizontal scrollbar */
@@ -1464,11 +1480,6 @@ textarea.form-input::-webkit-resizer { display: none; }
   .article-title {
     font-weight: var(--fw-600);
     padding-bottom: 15px;
-  }
-
-  .article-title::after {
-    width: 40px;
-    height: 5px;
   }
 
   .icon-box {
