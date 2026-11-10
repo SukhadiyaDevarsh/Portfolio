@@ -1164,17 +1164,15 @@ main {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  white-space: nowrap;
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
   background: var(--eerie-black-1);
   border: 1px solid var(--jet);
   color: var(--orange-yellow-crayola);
-  font-size: var(--fs-7);
-  font-weight: var(--fw-500);
-  padding: 8px 16px;
-  border-radius: 20px;
+  font-size: 22px;
+  border-radius: 50%;
 }
 
 .project-item > a:has(.confidential) { cursor: default; }
